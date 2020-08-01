@@ -1,0 +1,61 @@
+$green: #00FF00;
+$base: #000033;
+$red: #FF0033;
+
+@font-face {
+  font-family: moon-get;
+  font-weight: 400;
+  font-style: normal;
+  src: url(/moon_get-Heavy.ttf) format('truetype');
+} 
+
+html{ height: 100%; }
+body {
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  background: $base;
+  color: $green;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#header {
+  text-transform: uppercase;
+  max-width: 300px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li:before {
+  content: '> ';
+  font-weight: 100;
+}
+.nav-subject {
+  text-transform: uppercase;
+  font-weight: 700;
+  // font-family: moon-get;
+  // font-variant: small-caps;
+
+}
+.nav-details {
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.nav-sep:after {
+  content: ' / ';
+  font-weight: 100;
+}
+
+a {
+  text-decoration: none; 
+}
+
+a:visited {
+  color: $green;
+}
+a:hover {
+  color: $red;
+}
